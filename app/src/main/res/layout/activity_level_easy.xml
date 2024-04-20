@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LevelEasy"
+    android:fillViewport="true"
+    android:alpha="0.95"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/red_horror"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/creepster"
+            android:text="Zombies"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/card_1">
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_1"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintEnd_toStartOf="@id/card_2"
+            app:layout_constraintBottom_toTopOf="@id/card_4"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_2"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintStart_toEndOf="@id/card_1"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintEnd_toStartOf="@id/card_3"
+            app:layout_constraintBottom_toTopOf="@id/card_5"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_3"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintStart_toEndOf="@id/card_2"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/card_6"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_4"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintBottom_toTopOf="@id/card_7"
+            app:layout_constraintEnd_toStartOf="@id/card_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_5"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintBottom_toTopOf="@id/card_8"
+            app:layout_constraintEnd_toStartOf="@id/card_6"
+            app:layout_constraintStart_toEndOf="@id/card_4"
+            app:layout_constraintTop_toBottomOf="@id/card_2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_6"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintBottom_toTopOf="@id/card_9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card_5"
+            app:layout_constraintTop_toBottomOf="@id/card_3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_7"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintBottom_toTopOf="@id/card_10"
+            app:layout_constraintEnd_toStartOf="@+id/card_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_8"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintBottom_toTopOf="@id/card_11"
+            app:layout_constraintTop_toBottomOf="@id/card_5"
+            app:layout_constraintStart_toEndOf="@id/card_7"
+            app:layout_constraintEnd_toStartOf="@id/card_9"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_9"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintBottom_toTopOf="@id/card_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_8"
+            app:layout_constraintTop_toBottomOf="@id/card_6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_10"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintBottom_toTopOf="@id/adView"
+            app:layout_constraintEnd_toStartOf="@+id/card_11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_11"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintBottom_toTopOf="@id/adView"
+            app:layout_constraintEnd_toStartOf="@id/card_6"
+            app:layout_constraintTop_toBottomOf="@id/card_8"
+            app:layout_constraintStart_toEndOf="@id/card_10"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/card_12"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@drawable/card_zombie"
+            app:layout_constraintBottom_toTopOf="@id/adView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_11"
+            app:layout_constraintTop_toBottomOf="@id/card_9"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-7849840306436205/8944696423"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+  </ScrollView>
